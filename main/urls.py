@@ -28,6 +28,11 @@ from todo.views import TodoView
 
 
 router = routers.DefaultRouter()
-router.register(TodoView)
+router.register('todo', TodoView)
+
+# urlpatterns += [
+#     path('', router.urls),
+# ]
+# yukarıdaki kod ile aşağıdaki aynı işleve sahip
 
 urlpatterns += router.urls

@@ -7,4 +7,7 @@ class TodoSerializer(serializers.ModelSerializer):
         model = Todo
         # fields = '__all__'
         # fields = []
-        exclude = []
+        exclude = [
+            'created_date',
+            'updated_date',
+        ]
